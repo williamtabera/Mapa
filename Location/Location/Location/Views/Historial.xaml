@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Location.Views.Historial">
+    
+    <ListView x:Name="listPublicacionCine" HasUnevenRows="True" RowHeight="50">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding LocalDateTime}" FontSize="Large" Font="Bold,20" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding Latitude}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding Longitude}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding Altitude}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding AltitudeAccuracy}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding Accuracy}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding Heading}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                            <Label Text="{Binding Speed}" AbsoluteLayout.LayoutBounds="30, 55, 200, 25"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
